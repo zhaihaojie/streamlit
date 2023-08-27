@@ -1,3 +1,4 @@
 altair
 pandas
 streamlit
+search_data_explorer
