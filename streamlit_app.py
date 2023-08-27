@@ -1,14 +1,6 @@
-from search_data_explorer import SearchDataExplorer
+from search_data_explorer.tde_streamlit import app
 import streamlit as st
-
-"""
-数据可视化
-"""
-with st.echo(code_location="below"):
-    sde = SearchDataExplorer()
-    sde.open()
+import pandas as pd
 
 
-# import search_data_explorer as sde
-
-# sde.SearchDataExplorer().open()
+app(search_data=None, plots=None)
