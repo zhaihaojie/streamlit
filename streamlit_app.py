@@ -1,5 +1,14 @@
 from search_data_explorer import SearchDataExplorer
+import streamlit as st
 
-sde = SearchDataExplorer()
-print(sde)
-sde.open()
+"""
+数据可视化
+"""
+with st.echo(code_location="below"):
+    sde = SearchDataExplorer()
+    sde.open()
+
+
+# import search_data_explorer as sde
+
+# sde.SearchDataExplorer().open()
